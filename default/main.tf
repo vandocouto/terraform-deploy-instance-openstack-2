@@ -63,7 +63,7 @@ resource "openstack_compute_instance_v2" "terraform-openstack" {
 }
 
 // recebendo qual o ip público a instância recebeu
-output "swarm_manager_1_public_ip" {
+output "floating_public_ip" {
   value = "${openstack_compute_instance_v2.terraform-openstack.0.floating_ip}"
 }
 
